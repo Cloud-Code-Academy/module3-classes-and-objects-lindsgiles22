@@ -126,17 +126,27 @@ public with sharing class ClassesObjectsMethods {
      */
     public static Integer countVowels(String str) {
         // Initialize the result Integer
+        Integer result = 0;
 
-        /*
-        for () {
-            // get individual characters from the string - hint use substring or split
-            // check if the character is a vowel
-            // if it is a vowel, increment the result Integer
+        // Check for null or empty string
+        if(String.isEmpty(str)) {
+            return result;
         }
-        */
+        
+        // get individual characters from the string - hint use substring or split
+        List<String> characters = str.toLowerCase().split('');
+            
+            // check if the character is a vowel
+            for (String currentChar : characters){
+            if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u'){
+            // if it is a vowel, increment the result Integer
+                result ++;
+                }
+            }
+            return result;
+        }
 
-        return null; // Replace null with the variable you used to store the result
-    }
+        
 
     /**
      * Question 5
