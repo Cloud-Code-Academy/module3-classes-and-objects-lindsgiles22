@@ -196,13 +196,13 @@ public with sharing class ClassesObjectsMethods {
      * Question 7
      * Generate a random number between 50 and 100
      * Example: generateRandomNumber() should return a number like 75.
-     * @return A integer between 50 and 100.
+     * @return An integer between 50 and 100.
      */
     public static Integer generateRandomNumber() {
         // Use Math class to generate number between 50 and 100
-
+        Integer randomNumber = 50 + (Integer)(Math.random() * 51);
         // Return the random integer
-        return null; // Replace null with the variable you used to store the result
+        return randomNumber;
     }
 
     /**
