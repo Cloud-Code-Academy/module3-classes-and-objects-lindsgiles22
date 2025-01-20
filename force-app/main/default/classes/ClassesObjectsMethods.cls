@@ -232,12 +232,23 @@ public with sharing class ClassesObjectsMethods {
         // Define a map of day of the week as a key and day number as the value
         // Monday = 1, Tuesday = 2, etc.
 
+        Map<String,Integer> dayOfWeekNumber = new Map<String, Integer>();
+        dayOfWeekNumber.put('Monday',1);
+        dayOfWeekNumber.put('Tuesday',2);
+        dayOfWeekNumber.put('Wednesday',3);
+        dayOfWeekNumber.put('Thursday',4);
+        dayOfWeekNumber.put('Friday',5);
+        dayOfWeekNumber.put('Saturday',6);
+        dayOfWeekNumber.put('Sunday',7);
+
         // Get the day name using .format('EEEE');
+        String dayOfWeek = dt.format('EEEE');
 
         // Get the day number from the map using the day name
+        Integer numberOfWeek = dayOfWeekNumber[dayOfWeek];
 
         // Return the result as a string
-        return null; // Replace null with the variable you used to store the result
+        return String.valueOf(numberOfWeek); 
     }
 
 
