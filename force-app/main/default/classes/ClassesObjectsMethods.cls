@@ -247,7 +247,7 @@ public with sharing class ClassesObjectsMethods {
         String dayOfWeek = dt.format('EEEE');
 
         // Get the day number from the map using the day name
-        Integer numberOfWeek = dayOfWeekNumber[dayOfWeek];
+        Integer numberOfWeek = dayOfWeekNumber.get(dayOfWeek);
 
         // Return the result as a string
         return String.valueOf(numberOfWeek); 
