@@ -99,7 +99,7 @@ public with sharing class ClassesObjectsMethods {
      */
     public static String removeDuplicateWords(String sentence) {
         // Split the sentence into words
-        List<String> wordslist = sentence.split(' ');
+        List<String> wordsList = sentence.split(' ');
 
         // Create a set to store the unique words
         Set<String> uniqueWords = new Set<String>();
@@ -110,9 +110,9 @@ public with sharing class ClassesObjectsMethods {
         }
         // Convert the set to a list to maintain order
         List<String> uniqueWordsList = new List<String>(uniqueWords);
-        
+
         // Join the unique words back into a sentence
-        String result = String.join(' ', uniqueWordsList);
+        String result = String.join(uniqueWordsList, ' ');
 
         // Return the sentence with unique words
         return result; 
