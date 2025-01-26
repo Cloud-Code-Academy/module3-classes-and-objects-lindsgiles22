@@ -108,9 +108,11 @@ public with sharing class ClassesObjectsMethods {
         for(String word : wordsList){
             uniqueWords.add(word);
         }
-
+        // Convert the set to a list to maintain order
+        List<String> uniqueWordsList = new List<String>(uniqueWords);
+        
         // Join the unique words back into a sentence
-        String result = String.join(' ', uniqueWords);
+        String result = String.join(' ', uniqueWordsList);
 
         // Return the sentence with unique words
         return result; 
