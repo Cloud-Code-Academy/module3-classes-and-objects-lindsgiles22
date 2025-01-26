@@ -375,7 +375,7 @@ public with sharing class ClassesObjectsMethods {
         // Method introduceYourself that returns the details of the person        
         // Return a string in the format "Hello, my name is <name> and I am <age> years old."
         // For example, introduceYourself() should return a string like "Hello, my name is John Doe and I am 28 years old."
-        public Person introduceYourself(){
+        public String introduceYourself(){
             String introduction = 'Hello, my name is ' + name + ' and I am ' + age + ' years old.';
             return introduction;
         }
