@@ -198,7 +198,6 @@ public with sharing class ClassesObjectsMethodsTest {
         String bookDetails = myBook.getBookDetails();
         Assert.areEqual('Title: 1984, Author: George Orwell', bookDetails, 'The book details should be correctly formatted');
     }
-    */
 
     @IsTest
     static void testCreateAndGetBookDetails() {
