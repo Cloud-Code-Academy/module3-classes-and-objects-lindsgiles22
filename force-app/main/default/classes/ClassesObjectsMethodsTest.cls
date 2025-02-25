@@ -184,7 +184,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.isNull(result, 'Year difference should be null if both dates are null');
     }
 
-    /* //UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+    
     @IsTest
     static void testBookClass() {
         // Initialize a new book instance
@@ -212,7 +212,6 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.areEqual(expectedResult, result, 'The method should return the correct book details');
     }
 
-    /* //UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
     static void testGenerateBookList() {
         // Create a Book instance
@@ -240,7 +239,7 @@ public with sharing class ClassesObjectsMethodsTest {
     }
     */
 
-    /* //UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+    
     @IsTest
     static void testPersonClass() {
         // Initialize a new Person instance
@@ -291,7 +290,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.areEqual(expectedAge, resultDetails.get(2), 'The third element should be the expected age');
     }
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+    
     @IsTest
     static void testCreatePerson() {
         // Define the name and age to use for testing
@@ -307,7 +306,6 @@ public with sharing class ClassesObjectsMethodsTest {
     }
     */
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
     static void testCreateMultiplePersons() {
         // Define a list of names and an age for testing
@@ -329,7 +327,7 @@ public with sharing class ClassesObjectsMethodsTest {
     }
     */
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+    
     @IsTest
     static void testGetOlderPerson() {
         // Create two Person objects with different ages

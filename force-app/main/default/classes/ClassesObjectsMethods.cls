@@ -398,9 +398,13 @@ public with sharing class ClassesObjectsMethods {
 
         // Setter method that sets the age of the person
         public void setAge(Integer age){
+            if (age > 0) {
             this.age = age;
+        } else {
+            this.age = 1;
         }
     }
+}
 
     /**
      * Question 15
