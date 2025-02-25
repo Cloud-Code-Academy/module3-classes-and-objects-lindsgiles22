@@ -236,7 +236,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.areEqual(352, result[0].pages, 'Pages of book at index 0 should match');
         Assert.areEqual(256, result[1].pages, 'Pages of book at index 1 should match');
     }
-    */
+    
 
     
     @IsTest
@@ -264,7 +264,7 @@ public with sharing class ClassesObjectsMethodsTest {
         intro = testPerson.introduceYourself();
         Assert.areEqual('Hello, my name is Jane Doe and I am 30 years old.', intro, 'The updated introduction should be correctly formatted');
     }
-    */
+    
 
     @IsTest
     static void testPersonDetails() {
@@ -303,7 +303,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.areEqual(testName, resultPerson.getName(), 'The person\'s name should match the test name');
         Assert.areEqual(testAge, resultPerson.getAge(), 'The person\'s age should match the test age');
     }
-    */
+    
 
     @IsTest
     static void testCreateMultiplePersons() {
@@ -324,7 +324,7 @@ public with sharing class ClassesObjectsMethodsTest {
             Assert.areEqual(testAge, resultPersons[i].getAge(), 'The person\'s age should match the test age');
         }
     }
-    */
+    
 
     
     @IsTest
@@ -359,5 +359,5 @@ public with sharing class ClassesObjectsMethodsTest {
         // Check that the returned Person object is one of the two Persons
         Assert.isTrue(resultPerson == person1 || resultPerson == person2, 'The returned Person should be one of the two Persons');
     }
-    */
+    
 }

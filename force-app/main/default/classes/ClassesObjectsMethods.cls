@@ -333,9 +333,9 @@ public with sharing class ClassesObjectsMethods {
      * @param myBook1 The first book object.
      * @return return a list of books.
      */
-    public static List<String> generateBookList(Book myBook1) {
+    public static List<Book> generateBookList(Book myBook1) {
         // Create a list of books
-        List<String> bookDetailsList = new List<String>();
+        List<Book> bookDetailsList = new List<Book>();
         // Update the title and author of myBook1
         // Update the pages for myBook1 to 352
         myBook1.title = 'Harry Potter and the Chamber of Secrets';
@@ -349,8 +349,8 @@ public with sharing class ClassesObjectsMethods {
         myBook2.pages = 256;
 
         // Add the book to the list
-        bookDetailsList.add(myBook1.getBookDetails());
-        bookDetailsList.add(myBook2.getBookDetails());
+        bookDetailsList.add(myBook1);
+        bookDetailsList.add(myBook2);
 
         return bookDetailsList;      
     }
@@ -491,7 +491,7 @@ public with sharing class ClassesObjectsMethods {
         if (person2 == null) {
             return person1;
         }
-        
+
         Integer person1Age = person1.getAge();
         Integer person2Age = person2.getAge();
         // Compare the ages
