@@ -135,12 +135,14 @@ public with sharing class ClassesObjectsMethods {
             return result;
         }
         
+       // Define set of vowels
+       Set<String> vowels = new Set<String>{'a', 'e', 'i', 'o', 'u'};
         // get individual characters from the string - hint use substring or split
         List<String> characters = str.toLowerCase().split('');
             
             // check if the character is a vowel
             for (String currentChar : characters){
-            if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u'){
+            if (vowels.contains(currentChar)){
             // if it is a vowel, increment the result Integer
                 result ++;
                 }
