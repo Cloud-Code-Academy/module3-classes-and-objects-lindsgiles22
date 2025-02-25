@@ -481,6 +481,17 @@ public with sharing class ClassesObjectsMethods {
      * @return The Person object of the older person.
      */
     public static Person getOlderPerson(Person person1, Person person2) {
+        if (person1 == null && person2 == null) {
+            return null;
+        }
+        // If one is null, return the other
+        if (person1 == null) {
+            return person2;
+        }
+        if (person2 == null) {
+            return person1;
+        }
+        
         Integer person1Age = person1.getAge();
         Integer person2Age = person2.getAge();
         // Compare the ages
